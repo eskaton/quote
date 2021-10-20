@@ -31,6 +31,7 @@ fn parse_args(args: &Vec<String>) -> ArgMatches {
 
     return App::new("Quote")
         .version(crate_version!())
+        .about("Takes a list of strings and surrounds them with a quoting character")
         .setting(AppSettings::GlobalVersion)
         .setting(AppSettings::VersionlessSubcommands)
         .arg(&arg_char)
